@@ -75,7 +75,7 @@ def test_func():
 		for list2_item in [list2.headval, b2, b3]:
 			j += 1
 			if list1_item == list2_item:
-				print(list1_item.dataval, i, j)
+				print("Element: ", list1_item.dataval, "\nFirst index: ", i, "\nSecond index: ", j)
 				return
 
 test_func()
