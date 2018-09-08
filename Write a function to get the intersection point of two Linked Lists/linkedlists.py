@@ -68,10 +68,14 @@ b2.nextval = b3
 ######################################
 
 def test_func():
+	i = -1
 	for list1_item in [list1.headval, a2, a3, a4, a5]:
+		i += 1
+		j = -1
 		for list2_item in [list2.headval, b2, b3]:
+			j += 1
 			if list1_item == list2_item:
-				print(list1_item.dataval)
+				print(list1_item.dataval, i, j)
 				return
 
 test_func()
